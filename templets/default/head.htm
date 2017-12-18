@@ -1,0 +1,75 @@
+<link href="/skins/default/zzsc.css" rel="stylesheet" type="text/css"/>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">{dede:global.cfg_rx/}</li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin={dede:global.cfg_qqzx/}" title="即刻发送您的需求">在线咨询</a> </li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin={dede:global.cfg_qqxd/}" title="即刻发送您的需求">在线下单</a> </li>
+      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+        <img class="hd_qr" src="/skins/default/img/weixin.jpg" width="125" alt="关注我们"> </li>
+    </ul>
+  </div>
+</div>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/wap/view.php?aid={dede:field.id/}">
+<script type="text/javascript">// JavaScript Document
+function urlredirect() {
+	var sUserAgent = navigator.userAgent.toLowerCase();	
+	if ((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+		// 只适用织梦建站，PC跳转移动端
+		var thisUrl = window.location.href;
+		window.location.href = thisUrl.substr(0,thisUrl.lastIndexOf('/')+1)+'wap/';
+		
+	}
+}
+urlredirect();</script>
+<div class="header"> 
+  <!-- cb_顶部链接导航 -->
+  <div class="hd_top tr">
+    <div class="container"> <em class="fl">{dede:global.cfg_hy/}</em> <span class="fr"><a href="javascript:addBookmark();">收藏本站</a>|{dede:type typeid='4'}<a href="[field:typelink/]"> [field:typename/]</a>{/dede:type}| {dede:type typeid='7'}<a href="[field:typelink/]"> [field:typename/]</a>{/dede:type} </span> </div>
+  </div>
+  <!-- cb_页眉内容 -->
+  <div class="hd_cont container"> 
+    <!-- cb_LOGO -->
+    <dl class="hd_logo">
+      <dt class="fl"><a href="/"> <img src="/skins/default/img/common/logo.png" alt="{dede:global.cfg_webname/}" width="169" height="57" /></a></dt>
+      <dd class="fl">
+        <h2> {dede:global.cfg_mc/}</h2>
+        <p> 专注高档手工礼品盒外贸OEM8年</p>
+      </dd>
+    </dl>
+    <dl class="dh_phone fr">
+      <dt>全国统一热线</dt>
+      <dd> {dede:global.cfg_rx/} </dd>
+    </dl>
+  </div>
+  <!-- cb_导航栏 -->
+  <div class="dh_nav">
+    <ul class="container">
+      <li class='navHome'><a href="/" title="首页" dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>首页</a></li>
+     {dede:channel type='top' currentstyle="<li><a href='~typelink~' class='cur'>~typename~</a></li>"}
+     <li><a href="[field:typelink/]">[field:typename/]</a></li>
+     {/dede:channel}
+    </ul>
+    
+  </div>
+</div>

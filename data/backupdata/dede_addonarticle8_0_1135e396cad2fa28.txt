@@ -1,0 +1,7 @@
+INSERT INTO `dede_addonarticle8` VALUES('52','35','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle8` VALUES('53','35','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle8` VALUES('54','36','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle8` VALUES('55','36','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle8` VALUES('56','36','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle8` VALUES('57','36','','','','127.0.0.1');
+INSERT INTO `dede_addonarticle8` VALUES('58','37','<span style=\"color: rgb(102, 102, 102); font-family: \'microsoft yahei\'; line-height: 24px; widows: 1;\">高级包装结构师，先后获得&ldquo;世界之星包装设计竞赛&rdquo;一等奖、&ldquo;中国包装创意设计大赛&rdquo;二等奖、&ldquo;全国包装结构设计大赛&rdquo;一等奖多个奖项。对包装结构有的其独特的见解，其丰富的经验，让他在每一个产品根据特色，而且在材料以及工艺上的采用更加合理。</span>','','','127.0.0.1');

@@ -1,0 +1,1 @@
+<a href="[field:typelink/]">最新资讯文章</a>

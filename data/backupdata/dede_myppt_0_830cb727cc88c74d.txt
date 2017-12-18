@@ -1,0 +1,4 @@
+INSERT INTO `dede_myppt` VALUES('6','1','0','广告一','','/uploads/160915/1-160915235445253.jpg','');
+INSERT INTO `dede_myppt` VALUES('7','1','1','手机广告二','','/uploads/160915/1-16091523551S50.jpg','');
+INSERT INTO `dede_myppt` VALUES('8','1','2','手机广告三','','/uploads/160915/1-160915235555312.jpg','');
+INSERT INTO `dede_myppt` VALUES('9','1','3','手机广告4','','/uploads/160915/1-160915235622964.jpg','');

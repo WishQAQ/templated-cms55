@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>走进我们  /  客户见证_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script language="javascript">
+        var MARK = "help";
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">SKIN_PATH="/skins/default/";</script><script type="text/javascript" src="/js/jquery.js"></script><script type="text/javascript" src="/js/Common.js"></script><script type="text/javascript" src="/js/Inc.js"></script><script type="text/javascript" src="/js/Ajax.js"></script>
+<link href="/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/Style.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/Common.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/temp.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--Header:Start--> 
+
+<link href="/skins/default/zzsc.css" rel="stylesheet" type="text/css"/>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">4008-888-888</li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线咨询</a> </li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线下单</a> </li>
+      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+        <img class="hd_qr" src="/skins/default/img/weixin.jpg" width="125" alt="关注我们"> </li>
+    </ul>
+  </div>
+</div>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/wap/view.php?aid=9">
+<script type="text/javascript">// JavaScript Document
+function urlredirect() {
+	var sUserAgent = navigator.userAgent.toLowerCase();	
+	if ((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+		// 只适用织梦建站，PC跳转移动端
+		var thisUrl = window.location.href;
+		window.location.href = thisUrl.substr(0,thisUrl.lastIndexOf('/')+1)+'wap/';
+		
+	}
+}
+urlredirect();</script>
+<div class="header"> 
+  <!-- cb_顶部链接导航 -->
+  <div class="hd_top tr">
+    <div class="container"> <em class="fl">这里显示网站顶部公告</em> <span class="fr"><a href="javascript:addBookmark();">收藏本站</a>|<a href="/about/"> 公司简介</a>| <a href="/photo/"> 公司环境</a> </span> </div>
+  </div>
+  <!-- cb_页眉内容 -->
+  <div class="hd_cont container"> 
+    <!-- cb_LOGO -->
+    <dl class="hd_logo">
+      <dt class="fl"><a href="/"> <img src="/skins/default/img/common/logo.png" alt="我的网站" width="169" height="57" /></a></dt>
+      <dd class="fl">
+        <h2> 某某科技有限公司</h2>
+        <p> 专注高档手工礼品盒外贸OEM8年</p>
+      </dd>
+    </dl>
+    <dl class="dh_phone fr">
+      <dt>全国统一热线</dt>
+      <dd> 4008-888-888 </dd>
+    </dl>
+  </div>
+  <!-- cb_导航栏 -->
+  <div class="dh_nav">
+    <ul class="container">
+      <li class='navHome'><a href="/" title="首页" dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>首页</a></li>
+     
+     <li><a href="/about/">公司简介</a></li>
+     
+     <li><a href="/zixun/">新闻中心</a></li>
+     
+     <li><a href="/products/">产品中心</a></li>
+     
+     <li><a href="/fengcai/">企业风采</a></li>
+     
+     <li><a href="/company/">走进我们</a></li>
+     
+     <li><a href="/contact/">联系我们</a></li>
+     
+    </ul>
+    
+  </div>
+</div>
+ 
+<script type="text/javascript">
+    //heaernavcs();
+    initCommonHeader();
+    if (MARK == "") var MARK = "index";
+    initCommonHeaderKeywords(MARK);
+    $(function () {
+        var cururl = location.href;
+        var i = 0;
+        var count = $(".dh_nav ul li a").length;
+        $(".dh_nav ul li a").each(function (index) {
+            var url = $(this).attr("href");
+            if (url.length > 5 && cururl.substring(cururl.length - url.length).toUpperCase() == url.toUpperCase()) {
+                $(this).addClass("cur");
+                return;
+            }
+            i++;
+        });
+        if (i == count) {
+            $(".dh_nav ul li a:eq(0)").addClass("cur");
+        }
+    });
+</script> 
+
+<!--Header:End--> 
+<!--Content:Start-->
+<div class="topadcs" style="background: url('/img/kh.jpg') no-repeat scroll center;
+        height: 400px"> </div>
+<div class="content">
+  <div class="left">
+    <div class="prs">
+      <h4  class="t05">走进我们</h4>
+      <div class='t05_con'>
+        <ul class='t05_uls'>
+          
+          <li><a href='/khjz/'>客户见证</a> </li>
+          
+          <li><a href='/company/rongyuzhengshu/'>荣誉证书</a> </li>
+          
+          <li><a href='/company/hezuohuoban/'>合作伙伴</a> </li>
+          
+          <li><a href='/company/yanfatuandui/'>研发团队</a> </li>
+          
+        </ul>
+      </div>
+    </div>
+    <h4 class="t05"> 相关资讯</h4>
+    <div class="t05_cons1">
+      <ul>
+        <li><a href='/zixun/jishu/62.html' title='创意包装'>创意包装</a></li>
+<li><a href='/zixun/jishu/61.html' title='包装行业正循序渐进打进国内外市场'>包装行业正循序渐进打进国内外市场</a></li>
+<li><a href='/zixun/jishu/60.html' title='低碳环保是主流，纸盒包装可再生'>低碳环保是主流，纸盒包装可再生</a></li>
+<li><a href='/zixun/jishu/59.html' title='过度包装不环保 “素颜淡妆”才低碳'>过度包装不环保 “素颜淡妆”才低碳</a></li>
+<li><a href='/zixun/xingyezixun/20.html' title='彩箱印刷定制生产流程'>彩箱印刷定制生产流程</a></li>
+<li><a href='/zixun/xingyezixun/19.html' title='我国包装行业应大力发展绿色包装 实现可持续发'>我国包装行业应大力发展绿色包装 实现可持续发</a></li>
+<li><a href='/zixun/xingyezixun/18.html' title='印刷人眼中出版业的“隐性成本”'>印刷人眼中出版业的“隐性成本”</a></li>
+<li><a href='/zixun/xingyezixun/17.html' title='按需印刷中应注意的事情'>按需印刷中应注意的事情</a></li>
+<li><a href='/news/16.html' title='浅析国产胶印设备印刷效率的提升'>浅析国产胶印设备印刷效率的提升</a></li>
+<li><a href='/news/15.html' title='如何运用印艺科技抢攻绿色会展商机'>如何运用印艺科技抢攻绿色会展商机</a></li>
+
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="contactn mt10 mb10 mb10">
+  <div class="t05">
+    <h4> <a class="yan2" href="/contact/">联系我们</a></h4>
+  </div>
+  <div class="subnr"> <img src="/skins/default/img/CatactUs.jpg">
+    <p> <span style="font-size: 12px;">咨询热线：</span></p>
+    <p style="font-size: 20px; color: #d5111e;"> 4008-888-888</p>
+    <p> <span>邮箱：</span> 123456@qq.com </p>
+    <span>地址：</span> 江苏省南京市玄武区玄武湖
+    </p>
+  </div>
+</div>
+ </div>
+  <script type="text/javascript">
+    helpSelectCurrentPosition("0001,0012,0016");
+</script>
+  <div class="right">
+    <div class="plc"> <span><a href='http://localhost:9090/'>主页</a> > <a href='/company/'>走进我们</a> > <a href='/khjz/'>客户见证</a> > </span> </div>
+    <div class="righttop"> </div>
+    <div class="right_main">
+      <div class="agent_con"> <dl class="dl_khjz">
+          <dt><a href="/khjz/63.html" target="_blank"> <img src="/uploads/allimg/150519/1-1505191536190-L.jpg" alt="杜汉" /></a></dt>
+          <dd>
+            <h4> <a href="/khjz/63.html" target="_blank"> 杜汉</a></h4>
+            每每有新的产品出来，永顺通总是能给我的产品穿上漂亮的衣衫，让我的产品在摩托专业展上突围而出，让最独特的品牌形像与机车紧紧相连，粗犷而不失档次。记得他们吴经理老是同</dd>
+        </dl><dl class="dl_khjz">
+          <dt><a href="/khjz/7.html" target="_blank"> <img src="/uploads/150517/1-15051G53209393.jpg" alt="一个不错的品牌" /></a></dt>
+          <dd>
+            <h4> <a href="/khjz/7.html" target="_blank"> 一个不错的品牌</a></h4>
+            印刷制版、印刷、加工、配套无缝对接不会因为外协造成层层费用，根本为我们客户考虑成本!我们之前也有合作其他客户，相比之下，我们觉得英利的技术更专业，价格也更实惠，我们</dd>
+        </dl><dl class="dl_khjz">
+          <dt><a href="/khjz/8.html" target="_blank"> <img src="/uploads/150517/1-15051G5313a30.jpg" alt="设计的包装箱我们很满意" /></a></dt>
+          <dd>
+            <h4> <a href="/khjz/8.html" target="_blank"> 设计的包装箱我们很满意</a></h4>
+            合作过好几次了，每次的合作都很愉快，英利设计的包装箱我们很满意，设计新颖，有创意又很符合我们的产品的定位，英利印刷真的是一个不错的品牌!</dd>
+        </dl><dl class="dl_khjz">
+          <dt><a href="/khjz/9.html" target="_blank"> <img src="/uploads/150517/1-15051G53119600.jpg" alt="全开印刷品质业内领先" /></a></dt>
+          <dd>
+            <h4> <a href="/khjz/9.html" target="_blank"> 全开印刷品质业内领先</a></h4>
+            我们公司是做化妆品的，产品展示盒是少不了的，渠道筛选道了英利印刷有限公司，后期就一直在合作，英利印刷台面展示盒整体外观和颜色搭配真实感强，给人以强烈的视觉感,设计的</dd>
+        </dl>
+        <div class="clear"> </div>
+        
+        <!--OranPager:start
+Developed By Oran Day(oransite#gmail.com)
+Version:1.1.0.9
+Aug. 28, 2009
+All rights reserved.-->
+        <div class="pagess">
+          <ul>
+            <li><span class="pageinfo">共 <strong>1</strong>页<strong>4</strong>条记录</span></li>
+
+          </ul>
+        </div>
+        <!--OranPager:end--> 
+        
+      </div>
+    </div>
+    <div class="rightbot"> </div>
+    <div class="RandomNews mb10">
+      <h4 class="diysr"> 新款产品</h4>
+      <div class="news_random"> <dl class="product_dl_commend">
+          <dt><a href="/products/caihe/81.html" target="_blank" title="化妆品组合包装盒矢量图"> <img src="/uploads/160914/1-1609141Z53AZ.jpg" alt="化妆品组合包装盒矢量图" /></a></dt>
+          <dd> <a href="/products/caihe/81.html" target="_blank" title="化妆品组合包装盒矢量图"> 化妆品组合包装盒矢量图</a></dd>
+        </dl>
+<dl class="product_dl_commend">
+          <dt><a href="/products/bzh/yd/67.html" target="_blank" title="ms001西点盒"> <img src="/uploads/allimg/150519/1-1505191F9330-L.jpg" alt="ms001西点盒" /></a></dt>
+          <dd> <a href="/products/bzh/yd/67.html" target="_blank" title="ms001西点盒"> ms001西点盒</a></dd>
+        </dl>
+<dl class="product_dl_commend">
+          <dt><a href="/products/bzh/yd/68.html" target="_blank" title="纯白手提6个粒格装cupcak"> <img src="/uploads/allimg/150519/1-1505191G1230-L.jpg" alt="纯白手提6个粒格装cupcak" /></a></dt>
+          <dd> <a href="/products/bzh/yd/68.html" target="_blank" title="纯白手提6个粒格装cupcak"> 纯白手提6个粒格装cupcak</a></dd>
+        </dl>
+<dl class="product_dl_commend">
+          <dt><a href="/products/caihe/jfb/66.html" target="_blank" title="牛皮纸包装盒+内托"> <img src="/uploads/allimg/150519/1-1505191FT70-L.jpg" alt="牛皮纸包装盒+内托" /></a></dt>
+          <dd> <a href="/products/caihe/jfb/66.html" target="_blank" title="牛皮纸包装盒+内托"> 牛皮纸包装盒+内托</a></dd>
+        </dl>
+
+        <div class="clear"> </div>
+      </div>
+    </div>
+    <div class="clear"> </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+<!--Content:End--> 
+<!--Footer:Start--> 
+
+<div class="fotNavBg">
+  <div class="fotNav container"> 
+  <a href="/">首页</a>
+  
+  | <a href="/about/">公司简介</a>
+  
+  | <a href="/zixun/">新闻中心</a>
+  
+  | <a href="/products/">产品中心</a>
+  
+  | <a href="/fengcai/">企业风采</a>
+  
+  | <a href="/company/">走进我们</a>
+  
+  | <a href="/contact/">联系我们</a>
+  
+  </div>
+</div>
+<div class="footWrap">
+  <div class="footer">
+   
+      <p>某某科技有限公司　4008-888-888</p>
+      <p>江苏省南京市玄武区玄武湖　123456@qq.com</p>
+      <p> Copyright © 2002-2016 织梦科技 版权所有  <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>　<a href="http://www.miitbeian.gov.cn/">苏ICP12345678</a></p>
+   
+  </div>
+</div>
+ 
+<script type="text/javascript" src="/js/rollup.min.js"></script> 
+
+<!-- Baidu Button BEGIN --> 
+
+<!-- Baidu Button END --> 
+
+<!--Footer:End-->
+</body>
+</html>

@@ -1,0 +1,2 @@
+INSERT INTO `dede_diyform2` VALUES('1','0','形成','','');
+INSERT INTO `dede_diyform2` VALUES('2','0','测试测试测试','测试','测试测试');

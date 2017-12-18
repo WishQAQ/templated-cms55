@@ -1,0 +1,647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>我的网站</title>
+<meta name="description" content="网站描述" />
+<meta name="keywords" content="关键词" />
+<link type="text/css" rel="stylesheet" href="/css/reset.css" />
+<link type="text/css" rel="stylesheet" href="/skins/default/Common.css" />
+<link type="text/css" rel="stylesheet" href="/skins/default/Index.css" />
+<link type="text/css" rel="stylesheet" href="/skins/default/temp.css" />
+<script type="text/javascript">        SKIN_PATH = "/skins/default/";</script>
+<script src="/js/ScrollPic.js" type="text/javascript"></script>
+<script src="/js/MSClass.js" type="text/javascript"></script>
+<script src="/js/Index.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+</head>
+<body>
+
+<!--<div id="daiyanbao_com_content" closerate="3" playrate="-2" style="position: fixed;_position: absolute;text-align: left;overflow: visible;bottom :0px;left:0px;display:block; z-index:999;"><script src="//res.daiyanbao.com/freevideojs/304/2/18874777417.js"></script></div>--> 
+
+<link href="/skins/default/zzsc.css" rel="stylesheet" type="text/css"/>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">4008-888-888</li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线咨询</a> </li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线下单</a> </li>
+      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+        <img class="hd_qr" src="/skins/default/img/weixin.jpg" width="125" alt="关注我们"> </li>
+    </ul>
+  </div>
+</div>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/wap/view.php?aid=">
+<script type="text/javascript">// JavaScript Document
+function urlredirect() {
+	var sUserAgent = navigator.userAgent.toLowerCase();	
+	if ((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+		// 只适用织梦建站，PC跳转移动端
+		var thisUrl = window.location.href;
+		window.location.href = thisUrl.substr(0,thisUrl.lastIndexOf('/')+1)+'wap/';
+		
+	}
+}
+urlredirect();</script>
+<div class="header"> 
+  <!-- cb_顶部链接导航 -->
+  <div class="hd_top tr">
+    <div class="container"> <em class="fl">这里显示网站顶部公告</em> <span class="fr"><a href="javascript:addBookmark();">收藏本站</a>|<a href="/about/"> 公司简介</a>| <a href="/photo/"> 公司环境</a> </span> </div>
+  </div>
+  <!-- cb_页眉内容 -->
+  <div class="hd_cont container"> 
+    <!-- cb_LOGO -->
+    <dl class="hd_logo">
+      <dt class="fl"><a href="/"> <img src="/skins/default/img/common/logo.png" alt="我的网站" width="169" height="57" /></a></dt>
+      <dd class="fl">
+        <h2> 某某科技有限公司</h2>
+        <p> 专注高档手工礼品盒外贸OEM8年</p>
+      </dd>
+    </dl>
+    <dl class="dh_phone fr">
+      <dt>全国统一热线</dt>
+      <dd> 4008-888-888 </dd>
+    </dl>
+  </div>
+  <!-- cb_导航栏 -->
+  <div class="dh_nav">
+    <ul class="container">
+      <li class='navHome'><a href="/" title="首页" dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>首页</a></li>
+     
+     <li><a href="/about/">公司简介</a></li>
+     
+     <li><a href="/zixun/">新闻中心</a></li>
+     
+     <li><a href="/products/">产品中心</a></li>
+     
+     <li><a href="/fengcai/">企业风采</a></li>
+     
+     <li><a href="/company/">走进我们</a></li>
+     
+     <li><a href="/contact/">联系我们</a></li>
+     
+    </ul>
+    
+  </div>
+</div>
+ 
+<script type="text/javascript">
+    //heaernavcs();
+    initCommonHeader();
+    if (MARK == "") var MARK = "index";
+    initCommonHeaderKeywords(MARK);
+    $(function () {
+        var cururl = location.href;
+        var i = 0;
+        var count = $(".dh_nav ul li a").length;
+        $(".dh_nav ul li a").each(function (index) {
+            var url = $(this).attr("href");
+            if (url.length > 5 && cururl.substring(cururl.length - url.length).toUpperCase() == url.toUpperCase()) {
+                $(this).addClass("cur");
+                return;
+            }
+            i++;
+        });
+        if (i == count) {
+            $(".dh_nav ul li a:eq(0)").addClass("cur");
+        }
+    });
+</script>
+<div class="bannerBox">
+  <div id="flashs">
+  <div class="bgitem" id="flashbg0" style="background: url('/uploads/allimg/161011/1-1610111U5090-L.jpg') no-repeat scroll center top; height: 500px; width: 100%; cursor: pointer; margin: 0 auto;"> </div>
+<div class="bgitem" id="flashbg1" style="background: url('/uploads/161011/1-1610111U5004J.jpg') no-repeat scroll center top; height: 500px; width: 100%; cursor: pointer; margin: 0 auto;"> </div>
+<div class="bgitem" id="flashbg2" style="background: url('/uploads/161011/1-1610111U4505A.jpg') no-repeat scroll center top; height: 500px; width: 100%; cursor: pointer; margin: 0 auto;"> </div>
+<div class="bgitem" id="flashbg3" style="background: url('/uploads/161011/1-1610111U43YA.jpg') no-repeat scroll center top; height: 500px; width: 100%; cursor: pointer; margin: 0 auto;"> </div>
+ 
+    <script type="text/javascript" src="/js/flash.js"></script> 
+  </div>
+</div>
+<!-- cb_合作伙伴 -->
+
+<div class="hzhb container">
+  <h4> <a href="/company/hezuohuoban/"> 合作伙伴</a></h4>
+  <div class="alCont"> <a class="btnLeft" href="javascript:;" id="hezuo_left"></a>
+    <ul id="hezuo_scroll">
+      <li><a href="/company/hezuohuoban/2015/0517/57.html" title="杜汉"> <img alt="杜汉" src="/uploads/allimg/150517/1-15051G556260-L.jpg" width="112" height="60" /></a>
+        <h5> <a href="/company/hezuohuoban/2015/0517/57.html" title="杜汉"> 杜汉</a></h5>
+      </li>
+<li><a href="/company/hezuohuoban/2015/0517/56.html" title="金龙鱼"> <img alt="金龙鱼" src="/uploads/allimg/150517/1-15051G556090-L.jpg" width="112" height="60" /></a>
+        <h5> <a href="/company/hezuohuoban/2015/0517/56.html" title="金龙鱼"> 金龙鱼</a></h5>
+      </li>
+<li><a href="/company/hezuohuoban/2015/0517/55.html" title="招商地产"> <img alt="招商地产" src="/uploads/allimg/150517/1-15051G555480-L.jpg" width="112" height="60" /></a>
+        <h5> <a href="/company/hezuohuoban/2015/0517/55.html" title="招商地产"> 招商地产</a></h5>
+      </li>
+<li><a href="/company/hezuohuoban/2015/0517/54.html" title="协固玉器"> <img alt="协固玉器" src="/uploads/allimg/150517/1-15051G555310-L.jpg" width="112" height="60" /></a>
+        <h5> <a href="/company/hezuohuoban/2015/0517/54.html" title="协固玉器"> 协固玉器</a></h5>
+      </li>
+
+    </ul>
+    <a class="btnRight" href="javascript:;" id="hezuo_right"></a> </div>
+</div>
+<script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "hezuo_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "hezuo_left"; //左箭头ID
+    scrollPic_04.arrRightId = "hezuo_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 868; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script>
+<div class="cpBox container"> 
+  <!-- cb_产品菜单 -->
+  <div class="cpMu fl">
+    <h4> <a href="/products/">产品中心</a><span>Product center</span></h4>
+    <dl class='mu01 '>
+      <dt ><a href='/products/caihe/'>彩盒印刷</a></dt>
+      <dd>  <span> <a href="/products/caihe/jd/">家电包装箱</a></span>  <span> <a href="/products/caihe/swd/">手挽袋</a></span>  <span> <a href="/products/caihe/sgb/">水果包装箱</a></span>  <span> <a href="/products/caihe/jfb/">家纺包装箱</a></span>  <span> <a href="/products/caihe/dai/">牛皮手提袋</a></span>  </dd>
+    </dl><dl class='mu02 '>
+      <dt ><a href='/products/zlj/'>展览架</a></dt>
+      <dd>  <span> <a href="/products/zlj/csdt/">超市堆头</a></span>  <span> <a href="/products/zlj/gg/">挂钩展示架</a></span>  <span> <a href="/products/zlj/tm/">台面展示盒</a></span>  <span> <a href="/products/zlj/xf/">信封</a></span>  </dd>
+    </dl><dl class='mu03 '>
+      <dt ><a href='/products/bzh/'>包装盒</a></dt>
+      <dd>  <span> <a href="/products/bzh/zd/">折叠包装盒</a></span>  <span> <a href="/products/bzh/yd/">圆筒精装盒</a></span>  <span> <a href="/products/bzh/sxh/">书形盒精装盒</a></span>  </dd>
+    </dl> </div>
+  <!-- cb_产品列表 -->
+  
+  <div class="cpList fr">
+    <h4 class="contTit"> <a class="titA" href="/products/">产品推荐</a><a class="titMore" href="/products/">更多产品</a></h4>
+    <ul>
+      <li class=''><a href="/products/caihe/81.html" title="化妆品组合包装盒矢量图-化妆品组合包装盒矢量"> <img _src="/uploads/160914/1-1609141Z53AZ.jpg" width="236" height="188" alt="化妆品组合包装盒矢量图-化妆品组合包装盒矢量" /></a>
+        <h5> <a href="/products/caihe/81.html" title="化妆品组合包装盒矢量图-化妆品组合包装盒矢量"> 化妆品组合包装盒矢量图</a></h5>
+      </li>
+<li class=''><a href="/products/bzh/yd/67.html" title="ms001西点盒"> <img _src="/uploads/allimg/150519/1-1505191F9330-L.jpg" width="236" height="188" alt="ms001西点盒" /></a>
+        <h5> <a href="/products/bzh/yd/67.html" title="ms001西点盒"> ms001西点盒</a></h5>
+      </li>
+<li class=''><a href="/products/bzh/yd/68.html" title="纯白手提6个粒格装cupcake马芬手提纸杯盒 蛋糕蛋"> <img _src="/uploads/allimg/150519/1-1505191G1230-L.jpg" width="236" height="188" alt="纯白手提6个粒格装cupcake马芬手提纸杯盒 蛋糕蛋" /></a>
+        <h5> <a href="/products/bzh/yd/68.html" title="纯白手提6个粒格装cupcake马芬手提纸杯盒 蛋糕蛋"> 纯白手提6个粒格装cupcak</a></h5>
+      </li>
+<li class=''><a href="/products/caihe/jfb/66.html" title="牛皮纸包装盒+内托"> <img _src="/uploads/allimg/150519/1-1505191FT70-L.jpg" width="236" height="188" alt="牛皮纸包装盒+内托" /></a>
+        <h5> <a href="/products/caihe/jfb/66.html" title="牛皮纸包装盒+内托"> 牛皮纸包装盒+内托</a></h5>
+      </li>
+<li class=''><a href="/products/other/shoutidai/38.html" title="彩色手提袋"> <img _src="/uploads/allimg/150514/1-150514212Q60-L.jpg" width="236" height="188" alt="彩色手提袋" /></a>
+        <h5> <a href="/products/other/shoutidai/38.html" title="彩色手提袋"> 彩色手提袋</a></h5>
+      </li>
+<li class=''><a href="/products/other/shoutidai/37.html" title="各类手提袋"> <img _src="/uploads/allimg/150514/1-1505142119120-L.jpg" width="236" height="188" alt="各类手提袋" /></a>
+        <h5> <a href="/products/other/shoutidai/37.html" title="各类手提袋"> 各类手提袋</a></h5>
+      </li>
+<li class=''><a href="/products/zlj/gg/33.html" title="月饼包装盒"> <img _src="/uploads/allimg/150118/1-15011Q431380-L.jpg" width="236" height="188" alt="月饼包装盒" /></a>
+        <h5> <a href="/products/zlj/gg/33.html" title="月饼包装盒"> 月饼包装盒</a></h5>
+      </li>
+<li class=''><a href="/products/zlj/gg/32.html" title="北京礼品包装盒厂"> <img _src="/uploads/allimg/150118/1-15011Q430300-L.jpg" width="236" height="188" alt="北京礼品包装盒厂" /></a>
+        <h5> <a href="/products/zlj/gg/32.html" title="北京礼品包装盒厂"> 北京礼品包装盒厂</a></h5>
+      </li>
+<li class=''><a href="/products/zlj/gg/31.html" title="鲜橙汁包装盒"> <img _src="/uploads/allimg/150118/1-15011Q429510-L.jpg" width="236" height="188" alt="鲜橙汁包装盒" /></a>
+        <h5> <a href="/products/zlj/gg/31.html" title="鲜橙汁包装盒"> 鲜橙汁包装盒</a></h5>
+      </li>
+
+    </ul>
+  </div>
+  <div class="clear"> </div>
+</div>
+<div class="dyGgl">
+  <div class="container"> <b> 4008-888-888</b></div>
+</div>
+<!-- cb_优势 -->
+<div class="ysBox container">
+  <dl class="ys01">
+    <dt><span>01</span>平均日产量高达10万个<br />
+      让交期不是问题</dt>
+    <dd> <b>永顺通占地5000平方米的生产基地</b><br />
+      国内外先进的全自动生产线18条<br />
+      结构研发团队由10名本科以上学历组成<br />
+      <span>10年以上熟手工人50人，5年以上熟手工人100人<br />
+      平均日产量高达10万个！</span> </dd>
+  </dl>
+  <dl class="ys02">
+    <dt><span>02</span>自有品质监控部门，18道管控流程<br />
+      保证了出货质量</dt>
+    <dd>
+      <p> <b>面纸裱糊平整，无起泡及划伤</b></p>
+      <p> 角位处不露灰，不爆角，开裂</p>
+      <p> <b>配件定位准确，粘贴牢固</b>表面清洁，无污渍</p>
+      <p> 包边平整，无起皱，悬空，成品无异味及霉变</p>
+    </dd>
+  </dl>
+  <dl class="ys03">
+    <dt><span>03</span>种类齐全，可订制<br />
+      同等质量价格最优</dt>
+    <dd> 能按您的尺寸结构、材料等各项参数做出精准价格的优质产品<br />
+      生产中有问题第一时间得到有效的解决，<b>从而提高生产效率、质量，降低生产损耗、成本</b></dd>
+  </dl>
+  <dl class="ys04">
+    <dt><span>04</span>德国设备，色彩鲜艳<br />
+      印刷精美不掉色，质量更好</dt>
+    <dd> <span>自有海德堡4色印刷机</span>、切纸机、啤机、烫金啤机等国内外先进的生产设备超过18种</dd>
+  </dl>
+  <dl class="ys05">
+    <dt><span>05</span>强有力的售后支持<br />
+      快捷出货只需7天</dt>
+    <dd> <span>拥有独立的售后团队</span><br />
+      质量不满意，<span>在第一时间给您解决方案或无条件退换</span><br />
+      因质量问题造成的物流费用由我司承担，让您零风险 </dd>
+  </dl>
+  <div class="ysPhone"> <span>全国服务热线</span> <b> 4008-888-888</b> </div>
+</div>
+<div class="krSpan container"> 
+  <!-- cb_客户见证 -->
+  
+  <div class="khjz fl">
+    <h4 class="contTit"> <a class="titA" href="/khjz/"> 客户见证</a></h4>
+    <div class="khjzCont"> <dl>
+        <dt class="fl"><a href="/khjz/63.html" title="杜汉"> <img src="/uploads/allimg/150519/1-1505191536190-L.jpg" alt="杜汉" width="158" height="124" /></a></dt>
+        <dd>
+          <h5> <a href="/khjz/63.html" title="杜汉"> 杜汉</a></h5>
+          <p> 每每有新的产品出来，永顺通总是能给我的产品穿上漂亮的衣衫，让我的产品在摩托专业展上突围而出，让最独特的品牌形像与机车紧紧相连，粗犷而不失档次。记得他们吴经理老是同...</p>
+        </dd>
+      </dl>
+<dl>
+        <dt class="fl"><a href="/khjz/7.html" title="一个不错的品牌"> <img src="/uploads/150517/1-15051G53209393.jpg" alt="一个不错的品牌" width="158" height="124" /></a></dt>
+        <dd>
+          <h5> <a href="/khjz/7.html" title="一个不错的品牌"> 一个不错的品牌</a></h5>
+          <p> 印刷制版、印刷、加工、配套无缝对接不会因为外协造成层层费用，根本为我们客户考虑成本!我们之前也有合作其他客户，相比之下，我们觉得英利的技术更专业，价格也更实惠，我们...</p>
+        </dd>
+      </dl>
+<dl>
+        <dt class="fl"><a href="/khjz/8.html" title="设计的包装箱我们很满意"> <img src="/uploads/150517/1-15051G5313a30.jpg" alt="设计的包装箱我们很满意" width="158" height="124" /></a></dt>
+        <dd>
+          <h5> <a href="/khjz/8.html" title="设计的包装箱我们很满意"> 设计的包装箱我们很满意</a></h5>
+          <p> 合作过好几次了，每次的合作都很愉快，英利设计的包装箱我们很满意，设计新颖，有创意又很符合我们的产品的定位，英利印刷真的是一个不错的品牌!...</p>
+        </dd>
+      </dl>
+<dl>
+        <dt class="fl"><a href="/khjz/9.html" title="全开印刷品质业内领先"> <img src="/uploads/150517/1-15051G53119600.jpg" alt="全开印刷品质业内领先" width="158" height="124" /></a></dt>
+        <dd>
+          <h5> <a href="/khjz/9.html" title="全开印刷品质业内领先"> 全开印刷品质业内领先</a></h5>
+          <p> 我们公司是做化妆品的，产品展示盒是少不了的，渠道筛选道了英利印刷有限公司，后期就一直在合作，英利印刷台面展示盒整体外观和颜色搭配真实感强，给人以强烈的视觉感,设计的...</p>
+        </dd>
+      </dl>
+ </div>
+  </div>
+  
+  <!-- cb_荣誉证书 -->
+  
+  <div class="ryBox fr">
+    <h4 class="contTit"> <a class="titA" href="/company/rongyuzhengshu/"> 荣誉证书</a></h4>
+    <div class="ryCont"> <a class="btnLeft" href="javascript:;" id="rongyu_left"></a>
+      <ul id="rongyu_scroll">
+        <li><a href="/company/rongyuzhengshu/2015/0517/52.html" title="证书"> <img alt="证书" src="/uploads/150517/1-15051G55222H9.jpg" width="170" height="230" /></a>
+          <h5> <a href="/Helps/rongyuzhengshu.html" title="证书"> 证书</a></h5>
+        </li>
+<li><a href="/company/rongyuzhengshu/2015/0517/53.html" title="荣誉证书"> <img alt="荣誉证书" src="/uploads/150517/1-15051G55150500.jpg" width="170" height="230" /></a>
+          <h5> <a href="/Helps/rongyuzhengshu.html" title="荣誉证书"> 荣誉证书</a></h5>
+        </li>
+
+      </ul>
+      <a class="btnRight" href="javascript:;" id="rongyu_right"></a> </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "rongyu_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "rongyu_left"; //左箭头ID
+    scrollPic_04.arrRightId = "rongyu_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 170; //显示框宽度
+
+    scrollPic_04.pageWidth = 170; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 3; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script>
+  <div class="clear"> </div>
+</div>
+<!-- cb_成功案例 -->
+<div class="alSpan">
+  <div class="cgal container">
+    <h4> <a href="/shebei/">设备实力展示</a>
+      <div> Company strength show</div>
+    </h4>
+    <div class="alCont"> <a class="btnLeft" href="javascript:;" id="shili_left"></a>
+      <ul id="shili_scroll">
+        <li><a href="/shebei/45.html" title="自动包边机"> <img alt="自动包边机" src="/uploads/allimg/150516/1-1505162206420-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/shebei/45.html" title="自动包边机"> 自动包边机</a></h5>
+        </li>
+<li><a href="/shebei/44.html" title="半自动裱卡机"> <img alt="半自动裱卡机" src="/uploads/allimg/150516/1-1505162206150-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/shebei/44.html" title="半自动裱卡机"> 半自动裱卡机</a></h5>
+        </li>
+<li><a href="/shebei/43.html" title="全自动V槽机"> <img alt="全自动V槽机" src="/uploads/allimg/150516/1-1505162205470-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/shebei/43.html" title="全自动V槽机"> 全自动V槽机</a></h5>
+        </li>
+<li><a href="/shebei/42.html" title="半自动天地盖机"> <img alt="半自动天地盖机" src="/uploads/allimg/150516/1-1505162205200-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/shebei/42.html" title="半自动天地盖机"> 半自动天地盖机</a></h5>
+        </li>
+<li><a href="/shebei/41.html" title="切纸机"> <img alt="切纸机" src="/uploads/allimg/150516/1-1505162203570-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/shebei/41.html" title="切纸机"> 切纸机</a></h5>
+        </li>
+
+      </ul>
+      <a class="btnRight" href="javascript:;" id="shili_right"></a> </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "shili_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "shili_left"; //左箭头ID
+    scrollPic_04.arrRightId = "shili_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 928; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script> 
+</div>
+<div class="gySpan container"> 
+  <!-- cb_关于 -->
+  
+  <div class="gyBox fl">
+    <h4 class="contTit"> <a class="titA" href="/about/">专注高档手工礼品盒定制生产8年</a><a class="titMore"
+            href="/about/">更 多</a></h4>
+    <div class="gyCont">
+      <dl>
+        <dt class="fl"> <img src="/skins/default/img/Index/gyImg.jpg" width="250" height="184" /></dt>
+        <dd><p> 织梦内容管理系统(DedeCms) 以简单、实用、开源而闻名，是国内最知名的PHP开源网站管理系统，也是使用用户最多的PHP类CMS系统，在经历多年的发展，目前的版本无论在功能，还是在易用性方面，都有了长足的发展和进步，DedeCms免费版的主要目标用户锁定在个人站长，功能更专注于个人网站或中小型门户的构建，当然也不乏有企业用户和学校等在使用本系统。</p>
+          <a href="/about/">MORE+</a>
+          </p>
+        </dd>
+      </dl>
+      <ul id="compic_scroll">
+        <li><a href="/fengcai/shengchanchejian/2015/0516/51.html" title="流水线生产部"> <img alt="流水线生产部" src="/uploads/allimg/150516/1-150516221I20-L.jpg" width="142" height="95" /></a>
+          <h5> <a href="/fengcai/shengchanchejian/2015/0516/51.html" title="流水线生产部"> 流水线生产部</a></h5>
+        </li>
+<li><a href="/fengcai/shengchanchejian/2015/0516/50.html" title="手工车间"> <img alt="手工车间" src="/uploads/allimg/150516/1-150516221F20-L.jpg" width="142" height="95" /></a>
+          <h5> <a href="/fengcai/shengchanchejian/2015/0516/50.html" title="手工车间"> 手工车间</a></h5>
+        </li>
+<li><a href="/fengcai/shengchanchejian/2015/0516/49.html" title="手工生产车间"> <img alt="手工生产车间" src="/uploads/allimg/150516/1-1505162216300-L.jpg" width="142" height="95" /></a>
+          <h5> <a href="/fengcai/shengchanchejian/2015/0516/49.html" title="手工生产车间"> 手工生产车间</a></h5>
+        </li>
+
+      </ul>
+      <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "compic_scroll"; // 内容容器ID""
+    //scrollPic_04.arrLeftId = "compic_left"; //左箭头ID
+    //scrollPic_04.arrRightId = "compic_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 664; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script> 
+    </div>
+  </div>
+  <!-- cb_研发团队 -->
+  
+  <div class="yftd fr">
+    <h4 class="contTit"> <a class="titA" href="/company/yanfatuandui/">研发团队</a></h4>
+    <div class="yftdCont">
+      <dl>
+        <dt><a href="/company/yanfatuandui/"> <img src="/img/team.jpg" width="304" height="214" /></a></dt>
+        <dd> 公司研发团队具有一流的制作工艺、高度合作的研发、设计、生产团队，勇于开拓，敢于创新，努力使我们的产品达到集印刷品、包装、观赏于一体，具馈赠、摆设、展示等价值。为此，我们将竭尽全力使产品更精美，工艺更完善，品种更齐全！</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+<!-- cb_广告栏 -->
+<div class="ggl container"> <img src="/skins/default/img/Index/gglImg_01.jpg" width="1000" height="138" /><b>13509628858</b> </div>
+<div class="twSpan container"> 
+  <!--动态-->
+  
+  <div class="dtBox fl">
+    <h4> <a class=" cur" href="gongsidongtai.htm"
+                    id="chknew1" onmouseover="setTabNews('chknew',1,3);">公司动态 </a> <a class="" href="hangyedongtai.htm"
+                    id="chknew2" onmouseover="setTabNews('chknew',2,3);">行业动态 </a> <a class="" href="jishudongtai.htm"
+                    id="chknew3" onmouseover="setTabNews('chknew',3,3);">技术动态 </a> </h4>
+    <div class="dtCont">
+      <div id="con_chknew1" > <dl>
+          <dt class="fl"><a href="/news/16.html" title="浅析国产胶印设备印刷效率的提升"> <img alt="浅析国产胶印设备印刷效" src="/uploads/allimg/150115/1-150115104T70-L.jpg" width="206" height="160" /></a> </dt>
+          <dd>
+            <h5> <a href="/news/16.html" title="浅析国产胶印设备印刷效"> 浅析国产胶印设备印刷效率的提升</a></h5>
+            <p> 印刷效率一直是国产胶印设备和进口胶印设备的主要差距之一，目前，国产胶印设备在这方面已经取得突破。比如江苏昌昇将推出第一台串接式对开双面八色胶印机，将填补我国单张纸</p>
+          </dd>
+        </dl>
+
+        <ul>
+          <li><a target="_blank" href="/news/16.html" title="浅析国产胶印设备印刷效"> 浅析国产胶印设备印刷效率的提升</a><span>【2015-01-15】</span> </li>
+<li><a target="_blank" href="/news/15.html" title="如何运用印艺科技抢攻绿"> 如何运用印艺科技抢攻绿色会展商机</a><span>【2015-01-15】</span> </li>
+<li><a target="_blank" href="/news/14.html" title="包装印刷行业的“凡勃伦"> 包装印刷行业的“凡勃伦效应”</a><span>【2015-01-15】</span> </li>
+<li><a target="_blank" href="/news/2.html" title="印刷人眼中出版业的“隐"> 印刷人眼中出版业的“隐性成本”</a><span>【2015-01-13】</span> </li>
+
+        </ul>
+      </div>
+      <div id="con_chknew2" style='display: none;'> <dl>
+          <dt class="fl"><a href="/zixun/xingyezixun/20.html" title="彩箱印刷定制生产流程"> <img alt="彩箱印刷定制生产流程" src="/uploads/allimg/150115/105J36447-0-lp.gif" width="206" height="160" /></a> </dt>
+          <dd>
+            <h5> <a href="/zixun/xingyezixun/20.html" title="彩箱印刷定制生产流程"> 彩箱印刷定制生产流程</a></h5>
+            <p> 彩盒制作主要流程： 1.制作文档：任何彩盒生产印刷之前都要制作文档，对文档进行设计，设计好彩盒印刷文件，并同时完成彩盒材料的选定。 2.出版印刷：设计好彩盒印刷文档之后，</p>
+          </dd>
+        </dl>
+
+        <ul>
+          <li><a target="_blank" href="/zixun/xingyezixun/20.html" title="彩箱印刷定制生产流程"> 彩箱印刷定制生产流程</a><span>【2015-01-15】</span> </li>
+<li><a target="_blank" href="/zixun/xingyezixun/19.html" title="我国包装行业应大力发展"> 我国包装行业应大力发展绿色包装 实现可持续发</a><span>【2015-01-15】</span> </li>
+<li><a target="_blank" href="/zixun/xingyezixun/18.html" title="印刷人眼中出版业的“隐"> 印刷人眼中出版业的“隐性成本”</a><span>【2015-01-15】</span> </li>
+<li><a target="_blank" href="/zixun/xingyezixun/17.html" title="按需印刷中应注意的事情"> 按需印刷中应注意的事情</a><span>【2015-01-15】</span> </li>
+
+        </ul>
+      </div>
+      <div id="con_chknew3" style='display: none;'> <dl>
+          <dt class="fl"><a href="/zixun/jishu/62.html" title="创意包装"> <img alt="创意包装" src="/uploads/allimg/150518/1-15051Q61U30-L.jpg" width="206" height="160" /></a> </dt>
+          <dd>
+            <h5> <a href="/zixun/jishu/62.html" title="创意包装"> 创意包装</a></h5>
+            <p> 现在的商业竞争，既赢在注意力，也赢在创意。创意经济，顾名思义，就是创意也能创造经济价值，而且，由于市场竞争的急剧白热化，创意在很大程度上决定了成败。何出此言呢?大家</p>
+          </dd>
+        </dl>
+
+        <ul>
+          <li><a target="_blank" href="/zixun/jishu/62.html" title="创意包装"> 创意包装</a><span>【2015-05-18】</span> </li>
+<li><a target="_blank" href="/zixun/jishu/61.html" title="包装行业正循序渐进打进"> 包装行业正循序渐进打进国内外市场</a><span>【2015-05-18】</span> </li>
+<li><a target="_blank" href="/zixun/jishu/60.html" title="低碳环保是主流，纸盒包"> 低碳环保是主流，纸盒包装可再生</a><span>【2015-05-18】</span> </li>
+<li><a target="_blank" href="/zixun/jishu/59.html" title="过度包装不环保 “素颜淡"> 过度包装不环保 “素颜淡妆”才低碳</a><span>【2015-05-18】</span> </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function setTabNews(name, cursel, n) {
+        for (i = 1; i <= n; i++) {
+            var menu = document.getElementById(name + i);
+            var con = document.getElementById("con_" + name + i);
+            if (i == cursel) {
+                menu.className = "cur";
+                con.style.display = "block";
+            } else {
+                menu.className = "";
+                con.style.display = "none";
+            }
+        }
+    }
+</script> 
+  <!-- cb_常见问题 -->
+  
+  <div class="wtjd fr">
+    <h4 class="contTit"> <a class="titA" href="/zixun/changjianwenti/"> 常见问题</a></h4>
+    <div class="wtjdCont" >
+      <div class="wdCont" id="faqmarquee"> <dl>
+          <dt><a href="/zixun/changjianwenti/13.html" title="可否提供样品？"> 可否提供样品？ </a></dt>
+          <dd> 可以提供样品，新客户一般样品要收取相应的样品费，老客户可以根据相应情况免费提供样品;但样品费可以在客户下订单后退回或在10日内无损归还我们也退回。 </dd>
+        </dl>
+<dl>
+          <dt><a href="/zixun/changjianwenti/12.html" title="影响印刷品质的因素有哪些?"> 影响印刷品质的因素有哪些? </a></dt>
+          <dd> 在商业交易过程中，对印刷品作适当的品质评价尤为重要，彩色印刷工艺的复杂性众所周知，一件 印刷品的制作，往往经过十数个步骤才能完成，其中涉及到公司、工作人员等，不同环 </dd>
+        </dl>
+<dl>
+          <dt><a href="/zixun/changjianwenti/11.html" title="包装外形设计应遵循的原则"> 包装外形设计应遵循的原则 </a></dt>
+          <dd> 优秀的包装外形设计应遵循以下原则： (1)结合产品自身特点，充分运用商品外形要素的形式美法则。 (2)适应市场需求，进行准确的市场定位，创造品牌个性。 (3)要以轻、薄、短、小为 </dd>
+        </dl>
+ </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    new Marquee("faqmarquee", 0, 1, 318, 330, 20, 0, 1000, 22);
+</script>
+  <div class="clear"> </div>
+</div>
+<!-- cb_永顺通风采展示 -->
+<div class="alSpan">
+  <div class="gsfc container">
+    <h4> <a href="/photo/">风采展示</a>
+      <div> Company thear</div>
+    </h4>
+    <div class="fcCont"> <a class="btnLeft" href="javascript:;" id="huanjing_left"></a>
+      <ul id="huanjing_scroll">
+        <li><a href="/photo/48.html" title="工作环境"> <img alt="[filed:title/]" src="/uploads/allimg/150516/1-1505162214180-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/photo/48.html" title="工作环境"> 工作环境</a></h5>
+        </li>
+<li><a href="/photo/47.html" title="办公环境"> <img alt="[filed:title/]" src="/uploads/allimg/150516/1-1505162213450-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/photo/47.html" title="办公环境"> 办公环境</a></h5>
+        </li>
+<li><a href="/photo/46.html" title="公司环境"> <img alt="[filed:title/]" src="/uploads/allimg/150516/1-1505162213090-L.jpg" width="210" height="216" /></a>
+          <h5> <a href="/photo/46.html" title="公司环境"> 公司环境</a></h5>
+        </li>
+
+      </ul>
+      <a class="btnRight" href="javascript:;" id="huanjing_right"></a> </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "huanjing_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "huanjing_left"; //左箭头ID
+    scrollPic_04.arrRightId = "huanjing_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 928; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script> 
+</div>
+<div class="yqljBg">
+  <div class="yqlj container">
+    <h4> <a href=#> 友情链</a>接<span>links</span></h4>
+    <p>  <a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a>  <a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a>  <a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a>  </p>
+  </div>
+</div>
+<div class="fotNavBg">
+  <div class="fotNav container"> 
+  <a href="/">首页</a>
+  
+  | <a href="/about/">公司简介</a>
+  
+  | <a href="/zixun/">新闻中心</a>
+  
+  | <a href="/products/">产品中心</a>
+  
+  | <a href="/fengcai/">企业风采</a>
+  
+  | <a href="/company/">走进我们</a>
+  
+  | <a href="/contact/">联系我们</a>
+  
+  </div>
+</div>
+<div class="footWrap">
+  <div class="footer">
+   
+      <p>某某科技有限公司　4008-888-888</p>
+      <p>江苏省南京市玄武区玄武湖　123456@qq.com</p>
+      <p> Copyright © 2002-2016 织梦科技 版权所有  <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>　<a href="http://www.miitbeian.gov.cn/">苏ICP12345678</a></p>
+   
+  </div>
+</div>
+ 
+<script type="text/javascript" src="/js/rollup.min.js"></script> 
+
+<!-- Baidu Button BEGIN --> 
+
+<!-- Baidu Button END -->
+
+</body>
+<script src="js/lazyload.me.js" type="text/javascript"></script>
+</html>

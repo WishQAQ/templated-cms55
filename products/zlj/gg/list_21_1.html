@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>产品中心  /  展览架  /  挂钩展示架_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">SKIN_PATH="/skins/default/";</script><script type="text/javascript" src="/js/jquery.js"></script><script type="text/javascript" src="/js/Common.js"></script><script type="text/javascript" src="/js/Inc.js"></script><script type="text/javascript" src="/js/Ajax.js"></script>
+<link href="/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/Style.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/Common.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/temp.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--Header:Start--> 
+
+<link href="/skins/default/zzsc.css" rel="stylesheet" type="text/css"/>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">4008-888-888</li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线咨询</a> </li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线下单</a> </li>
+      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+        <img class="hd_qr" src="/skins/default/img/weixin.jpg" width="125" alt="关注我们"> </li>
+    </ul>
+  </div>
+</div>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/wap/view.php?aid=21">
+<script type="text/javascript">// JavaScript Document
+function urlredirect() {
+	var sUserAgent = navigator.userAgent.toLowerCase();	
+	if ((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+		// 只适用织梦建站，PC跳转移动端
+		var thisUrl = window.location.href;
+		window.location.href = thisUrl.substr(0,thisUrl.lastIndexOf('/')+1)+'wap/';
+		
+	}
+}
+urlredirect();</script>
+<div class="header"> 
+  <!-- cb_顶部链接导航 -->
+  <div class="hd_top tr">
+    <div class="container"> <em class="fl">这里显示网站顶部公告</em> <span class="fr"><a href="javascript:addBookmark();">收藏本站</a>|<a href="/about/"> 公司简介</a>| <a href="/photo/"> 公司环境</a> </span> </div>
+  </div>
+  <!-- cb_页眉内容 -->
+  <div class="hd_cont container"> 
+    <!-- cb_LOGO -->
+    <dl class="hd_logo">
+      <dt class="fl"><a href="/"> <img src="/skins/default/img/common/logo.png" alt="我的网站" width="169" height="57" /></a></dt>
+      <dd class="fl">
+        <h2> 某某科技有限公司</h2>
+        <p> 专注高档手工礼品盒外贸OEM8年</p>
+      </dd>
+    </dl>
+    <dl class="dh_phone fr">
+      <dt>全国统一热线</dt>
+      <dd> 4008-888-888 </dd>
+    </dl>
+  </div>
+  <!-- cb_导航栏 -->
+  <div class="dh_nav">
+    <ul class="container">
+      <li class='navHome'><a href="/" title="首页" dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>首页</a></li>
+     
+     <li><a href="/about/">公司简介</a></li>
+     
+     <li><a href="/zixun/">新闻中心</a></li>
+     
+     <li><a href="/products/">产品中心</a></li>
+     
+     <li><a href="/fengcai/">企业风采</a></li>
+     
+     <li><a href="/company/">走进我们</a></li>
+     
+     <li><a href="/contact/">联系我们</a></li>
+     
+    </ul>
+    
+  </div>
+</div>
+ 
+<script type="text/javascript">
+    //heaernavcs();
+    initCommonHeader();
+    if (MARK == "") var MARK = "index";
+    initCommonHeaderKeywords(MARK);
+    $(function () {
+        var cururl = location.href;
+        var i = 0;
+        var count = $(".dh_nav ul li a").length;
+        $(".dh_nav ul li a").each(function (index) {
+            var url = $(this).attr("href");
+            if (url.length > 5 && cururl.substring(cururl.length - url.length).toUpperCase() == url.toUpperCase()) {
+                $(this).addClass("cur");
+                return;
+            }
+            i++;
+        });
+        if (i == count) {
+            $(".dh_nav ul li a:eq(0)").addClass("cur");
+        }
+    });
+</script> 
+
+<!--Header:End--> 
+<!--Content:Start-->
+<div class="topadcs" style="background: url('/img/cp.jpg') no-repeat scroll center;
+        height:400px"> </div>
+<div class="content">
+  <div class="left">
+    <div class="leib">
+      <div class="tit"> 产品分类</div>
+      <div class="nr"> <h3 ><a href='/products/caihe/'>彩盒印刷</a></h3>
+        <ul>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/caihe/jd/">家电包装箱</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/caihe/swd/">手挽袋</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/caihe/sgb/">水果包装箱</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/caihe/jfb/">家纺包装箱</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/caihe/dai/">牛皮手提袋</a> </li>
+          
+        </ul><h3 ><a href='/products/zlj/'>展览架</a></h3>
+        <ul>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/zlj/csdt/">超市堆头</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/zlj/gg/">挂钩展示架</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/zlj/tm/">台面展示盒</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/zlj/xf/">信封</a> </li>
+          
+        </ul><h3 ><a href='/products/bzh/'>包装盒</a></h3>
+        <ul>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/bzh/zd/">折叠包装盒</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/bzh/yd/">圆筒精装盒</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/bzh/sxh/">书形盒精装盒</a> </li>
+          
+        </ul><h3 ><a href='/products/other/'>其它印刷产品</a></h3>
+        <ul>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/other/shoutidai/">手提袋</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/other/xuanchuance/">宣传册</a> </li>
+          
+          <li sid='0001,0008,0009'> <a   href="/products/other/liandan/">联单</a> </li>
+          
+        </ul> </div>
+    </div>
+    <script type="text/javascript">
+    productSelectCurrentPosition("");
+</script> 
+  </div>
+  <div class="right">
+    <div class="pro_curmbs"><span>当前位置：</span><a href='http://localhost:9090/'>主页</a> > <a href='/products/'>产品中心</a> > <a href='/products/zlj/'>展览架</a> > <a href='/products/zlj/gg/'>挂钩展示架</a> > </div>
+    <div class="righttop"> </div>
+    <div class="pro_main"> <dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/33.html"> <img src="/uploads/allimg/150118/1-15011Q431380-L.jpg" alt="<b>月饼包装盒</b>" title="<b>月饼包装盒</b>" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/33.html" target="_blank"> <b>月饼包装盒</b></a></dd>
+      </dl><dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/32.html"> <img src="/uploads/allimg/150118/1-15011Q430300-L.jpg" alt="<b>北京礼品包装盒厂</b>" title="<b>北京礼品包装盒厂</b>" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/32.html" target="_blank"> <b>北京礼品包装盒厂</b></a></dd>
+      </dl><dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/31.html"> <img src="/uploads/allimg/150118/1-15011Q429510-L.jpg" alt="<b>鲜橙汁包装盒</b>" title="<b>鲜橙汁包装盒</b>" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/31.html" target="_blank"> <b>鲜橙汁包装盒</b></a></dd>
+      </dl><dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/30.html"> <img src="/uploads/allimg/150118/1-15011Q429280-L.jpg" alt="产品包装盒" title="产品包装盒" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/30.html" target="_blank"> 产品包装盒</a></dd>
+      </dl><dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/29.html"> <img src="/uploads/allimg/150118/1-15011Q42U80-L.jpg" alt="有机蔬菜礼品包装盒设计" title="有机蔬菜礼品包装盒设计" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/29.html" target="_blank"> 有机蔬菜礼品包装盒设计</a></dd>
+      </dl><dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/28.html"> <img src="/uploads/allimg/150118/1-15011Q42J60-L.jpg" alt="精美礼品盒" title="精美礼品盒" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/28.html" target="_blank"> 精美礼品盒</a></dd>
+      </dl><dl class="p_list_dl">
+        <dt><a target="_blank" href="/products/zlj/gg/27.html"> <img src="/uploads/allimg/150118/1-15011Q42G30-L.jpg" alt="包装盒设计素材模板" title="包装盒设计素材模板" /></a></dt>
+        <dd class="d1"> <a href="/products/zlj/gg/27.html" target="_blank"> 包装盒设计素材模板</a></dd>
+      </dl>
+      <div class="clear"> </div>
+      <!--OranPager:start
+Developed By Oran Day(oransite#gmail.com)
+Version:1.1.0.9
+Aug. 28, 2009
+All rights reserved.-->
+      <div class="pagess">
+    <ul>
+     <li><span class="pageinfo">共 <strong>1</strong>页<strong>7</strong>条记录</span></li>
+
+    </ul>
+    </div>
+      <!--OranPager:end--> 
+      
+    </div>
+    <div class="rightbot"> </div>
+    <div class="RandomNews">
+      <h4> 资讯</h4>
+      <ul>
+        <li><span class="fr"> 2015-05-18</span><a target="_blank"
+                                        href="/zixun/jishu/62.html" title="创意包装"> 创意包装</a></li>
+<li><span class="fr"> 2015-05-18</span><a target="_blank"
+                                        href="/zixun/jishu/61.html" title="包装行业正循序渐进打进国内外市场"> 包装行业正循序渐进打进国内外市场</a></li>
+<li><span class="fr"> 2015-05-18</span><a target="_blank"
+                                        href="/zixun/jishu/60.html" title="低碳环保是主流，纸盒包装可再生"> 低碳环保是主流，纸盒包装可再生</a></li>
+<li><span class="fr"> 2015-05-18</span><a target="_blank"
+                                        href="/zixun/jishu/59.html" title="过度包装不环保 “素颜淡妆”才低碳"> 过度包装不环保 “素颜淡妆”才低碳</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/xingyezixun/20.html" title="彩箱印刷定制生产流程"> 彩箱印刷定制生产流程</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/xingyezixun/19.html" title="我国包装行业应大力发展绿色包装 实现可持续发"> 我国包装行业应大力发展绿色包装 实现可持续发</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/xingyezixun/18.html" title="印刷人眼中出版业的“隐性成本”"> 印刷人眼中出版业的“隐性成本”</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/xingyezixun/17.html" title="按需印刷中应注意的事情"> 按需印刷中应注意的事情</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/news/16.html" title="浅析国产胶印设备印刷效率的提升"> 浅析国产胶印设备印刷效率的提升</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/news/15.html" title="如何运用印艺科技抢攻绿色会展商机"> 如何运用印艺科技抢攻绿色会展商机</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/news/14.html" title="包装印刷行业的“凡勃伦效应”"> 包装印刷行业的“凡勃伦效应”</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/changjianwenti/13.html" title="可否提供样品？"> 可否提供样品？</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/changjianwenti/12.html" title="影响印刷品质的因素有哪些?"> 影响印刷品质的因素有哪些?</a></li>
+<li><span class="fr"> 2015-01-15</span><a target="_blank"
+                                        href="/zixun/changjianwenti/11.html" title="包装外形设计应遵循的原则"> 包装外形设计应遵循的原则</a></li>
+<li><span class="fr"> 2015-01-13</span><a target="_blank"
+                                        href="/news/2.html" title="印刷人眼中出版业的“隐性成本”"> 印刷人眼中出版业的“隐性成本”</a></li>
+
+        <div class="clear"> </div>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+<!--Content:End--> 
+<!--Footer:Start--> 
+
+<div class="fotNavBg">
+  <div class="fotNav container"> 
+  <a href="/">首页</a>
+  
+  | <a href="/about/">公司简介</a>
+  
+  | <a href="/zixun/">新闻中心</a>
+  
+  | <a href="/products/">产品中心</a>
+  
+  | <a href="/fengcai/">企业风采</a>
+  
+  | <a href="/company/">走进我们</a>
+  
+  | <a href="/contact/">联系我们</a>
+  
+  </div>
+</div>
+<div class="footWrap">
+  <div class="footer">
+   
+      <p>某某科技有限公司　4008-888-888</p>
+      <p>江苏省南京市玄武区玄武湖　123456@qq.com</p>
+      <p> Copyright © 2002-2016 织梦科技 版权所有  <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>　<a href="http://www.miitbeian.gov.cn/">苏ICP12345678</a></p>
+   
+  </div>
+</div>
+ 
+<script type="text/javascript" src="/js/rollup.min.js"></script> 
+
+<!-- Baidu Button END --> 
+
+<!--Footer:End-->
+</body>
+</html>

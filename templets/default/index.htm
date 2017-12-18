@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link type="text/css" rel="stylesheet" href="/css/reset.css" />
+<link type="text/css" rel="stylesheet" href="/skins/default/Common.css" />
+<link type="text/css" rel="stylesheet" href="/skins/default/Index.css" />
+<link type="text/css" rel="stylesheet" href="/skins/default/temp.css" />
+<script type="text/javascript">        SKIN_PATH = "/skins/default/";</script>
+<script src="/js/ScrollPic.js" type="text/javascript"></script>
+<script src="/js/MSClass.js" type="text/javascript"></script>
+<script src="/js/Index.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+</head>
+<body>
+
+<!--<div id="daiyanbao_com_content" closerate="3" playrate="-2" style="position: fixed;_position: absolute;text-align: left;overflow: visible;bottom :0px;left:0px;display:block; z-index:999;"><script src="//res.daiyanbao.com/freevideojs/304/2/18874777417.js"></script></div>--> 
+
+{dede:include filename='head.htm'/} 
+<script type="text/javascript">
+    //heaernavcs();
+    initCommonHeader();
+    if (MARK == "") var MARK = "index";
+    initCommonHeaderKeywords(MARK);
+    $(function () {
+        var cururl = location.href;
+        var i = 0;
+        var count = $(".dh_nav ul li a").length;
+        $(".dh_nav ul li a").each(function (index) {
+            var url = $(this).attr("href");
+            if (url.length > 5 && cururl.substring(cururl.length - url.length).toUpperCase() == url.toUpperCase()) {
+                $(this).addClass("cur");
+                return;
+            }
+            i++;
+        });
+        if (i == count) {
+            $(".dh_nav ul li a:eq(0)").addClass("cur");
+        }
+    });
+</script>
+<div class="bannerBox">
+  <div id="flashs">
+  {dede:arclist row='5' titlelen='36' typeid='43'}
+    <div class="bgitem" id="flashbg[field:global name=autoindex runphp="yes"]@me=@me-1;[/field:global]" style="background: url('[field:litpic/]') no-repeat scroll center top; height: 500px; width: 100%; cursor: pointer; margin: 0 auto;"> </div>
+   {/dede:arclist} 
+    <script type="text/javascript" src="/js/flash.js"></script> 
+  </div>
+</div>
+<!-- cb_合作伙伴 -->
+
+<div class="hzhb container">
+  <h4> {dede:type typeid='36'} <a href="[field:typelink/]"> [field:typename/]</a>{/dede:type}</h4>
+  <div class="alCont"> <a class="btnLeft" href="javascript:;" id="hezuo_left"></a>
+    <ul id="hezuo_scroll">
+      {dede:arclist typeid='36'}
+      <li><a href="[field:arcurl/]" title="[field:title/]"> <img alt="[field:title/]" src="[field:litpic/]" width="112" height="60" /></a>
+        <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:title/]</a></h5>
+      </li>
+      {/dede:arclist}
+    </ul>
+    <a class="btnRight" href="javascript:;" id="hezuo_right"></a> </div>
+</div>
+<script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "hezuo_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "hezuo_left"; //左箭头ID
+    scrollPic_04.arrRightId = "hezuo_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 868; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script>
+<div class="cpBox container"> 
+  <!-- cb_产品菜单 -->
+  <div class="cpMu fl">
+    <h4> {dede:type typeid='16'} <a href="[field:typelink/]">产品中心</a>{/dede:type}<span>Product center</span></h4>
+    {dede:channelartlist typeid='16' row='3'}
+    <dl class='mu0{dede:global.itemindex/} '>
+      <dt ><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></dt>
+      <dd> {dede:channel type='son' noself='yes'} <span> <a href="[field:typelink/]">[field:typename/]</a></span> {/dede:channel} </dd>
+    </dl>
+    {/dede:channelartlist} </div>
+  <!-- cb_产品列表 -->
+  
+  <div class="cpList fr">
+    <h4 class="contTit"> {dede:type typeid='16'}<a class="titA" href="[field:typelink/]">产品推荐</a><a class="titMore" href="[field:typelink/]">更多产品</a>{/dede:type}</h4>
+    <ul>
+      {dede:arclist row='9' typeid='16'   flag='c' }
+      <li class=''><a href="[field:arcurl/]" title="[field:fulltitle/]"> <img _src="[field:litpic/]" width="236" height="188" alt="[field:fulltitle/]" /></a>
+        <h5> <a href="[field:arcurl/]" title="[field:fulltitle/]"> [field:title/]</a></h5>
+      </li>
+      {/dede:arclist}
+    </ul>
+  </div>
+  <div class="clear"> </div>
+</div>
+<div class="dyGgl">
+  <div class="container"> <b> {dede:global.cfg_rx/}</b></div>
+</div>
+<!-- cb_优势 -->
+<div class="ysBox container">
+  <dl class="ys01">
+    <dt><span>01</span>平均日产量高达10万个<br />
+      让交期不是问题</dt>
+    <dd> <b>永顺通占地5000平方米的生产基地</b><br />
+      国内外先进的全自动生产线18条<br />
+      结构研发团队由10名本科以上学历组成<br />
+      <span>10年以上熟手工人50人，5年以上熟手工人100人<br />
+      平均日产量高达10万个！</span> </dd>
+  </dl>
+  <dl class="ys02">
+    <dt><span>02</span>自有品质监控部门，18道管控流程<br />
+      保证了出货质量</dt>
+    <dd>
+      <p> <b>面纸裱糊平整，无起泡及划伤</b></p>
+      <p> 角位处不露灰，不爆角，开裂</p>
+      <p> <b>配件定位准确，粘贴牢固</b>表面清洁，无污渍</p>
+      <p> 包边平整，无起皱，悬空，成品无异味及霉变</p>
+    </dd>
+  </dl>
+  <dl class="ys03">
+    <dt><span>03</span>种类齐全，可订制<br />
+      同等质量价格最优</dt>
+    <dd> 能按您的尺寸结构、材料等各项参数做出精准价格的优质产品<br />
+      生产中有问题第一时间得到有效的解决，<b>从而提高生产效率、质量，降低生产损耗、成本</b></dd>
+  </dl>
+  <dl class="ys04">
+    <dt><span>04</span>德国设备，色彩鲜艳<br />
+      印刷精美不掉色，质量更好</dt>
+    <dd> <span>自有海德堡4色印刷机</span>、切纸机、啤机、烫金啤机等国内外先进的生产设备超过18种</dd>
+  </dl>
+  <dl class="ys05">
+    <dt><span>05</span>强有力的售后支持<br />
+      快捷出货只需7天</dt>
+    <dd> <span>拥有独立的售后团队</span><br />
+      质量不满意，<span>在第一时间给您解决方案或无条件退换</span><br />
+      因质量问题造成的物流费用由我司承担，让您零风险 </dd>
+  </dl>
+  <div class="ysPhone"> <span>全国服务热线</span> <b> {dede:global.cfg_rx/}</b> </div>
+</div>
+<div class="krSpan container"> 
+  <!-- cb_客户见证 -->
+  
+  <div class="khjz fl">
+    <h4 class="contTit"> {dede:type typeid='9'}<a class="titA" href="[field:typelink/]"> [field:typename/]</a>{/dede:type}</h4>
+    <div class="khjzCont"> {dede:arclist typeid='9' row='4'}
+      <dl>
+        <dt class="fl"><a href="[field:arcurl/]" title="[field:title/]"> <img src="[field:litpic/]" alt="[field:title/]" width="158" height="124" /></a></dt>
+        <dd>
+          <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:title/]</a></h5>
+          <p> [field:description/]...</p>
+        </dd>
+      </dl>
+      {/dede:arclist} </div>
+  </div>
+  
+  <!-- cb_荣誉证书 -->
+  
+  <div class="ryBox fr">
+    <h4 class="contTit"> {dede:type typeid='35'}<a class="titA" href="[field:typelink/]"> [field:typename/]</a>{/dede:type}</h4>
+    <div class="ryCont"> <a class="btnLeft" href="javascript:;" id="rongyu_left"></a>
+      <ul id="rongyu_scroll">
+        {dede:arclist typeid='35'}
+        <li><a href="[field:arcurl/]" title="[field:fulltitle/]"> <img alt="[field:fulltitle/]" src="[field:litpic/]" width="170" height="230" /></a>
+          <h5> <a href="/Helps/rongyuzhengshu.html" title="[field:fulltitle/]"> [field:title/]</a></h5>
+        </li>
+        {/dede:arclist}
+      </ul>
+      <a class="btnRight" href="javascript:;" id="rongyu_right"></a> </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "rongyu_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "rongyu_left"; //左箭头ID
+    scrollPic_04.arrRightId = "rongyu_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 170; //显示框宽度
+
+    scrollPic_04.pageWidth = 170; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 3; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script>
+  <div class="clear"> </div>
+</div>
+<!-- cb_成功案例 -->
+<div class="alSpan">
+  <div class="cgal container">
+    <h4> {dede:type typeid='5'}<a href="[field:typelink/]">设备实力展示</a>{/dede:type}
+      <div> Company strength show</div>
+    </h4>
+    <div class="alCont"> <a class="btnLeft" href="javascript:;" id="shili_left"></a>
+      <ul id="shili_scroll">
+        {dede:arclist typeid='5'}
+        <li><a href="[field:arcurl/]" title="[field:fulltitle/]"> <img alt="[field:fulltitle/]" src="[field:litpic/]" width="210" height="216" /></a>
+          <h5> <a href="[field:arcurl/]" title="[field:fulltitle/]"> [field:fulltitle/]</a></h5>
+        </li>
+        {/dede:arclist}
+      </ul>
+      <a class="btnRight" href="javascript:;" id="shili_right"></a> </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "shili_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "shili_left"; //左箭头ID
+    scrollPic_04.arrRightId = "shili_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 928; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script> 
+</div>
+<div class="gySpan container"> 
+  <!-- cb_关于 -->
+  
+  <div class="gyBox fl">
+    <h4 class="contTit"> {dede:type typeid='4'} <a class="titA" href="[field:typelink/]">专注高档手工礼品盒定制生产8年</a><a class="titMore"
+            href="[field:typelink/]">更 多</a>{/dede:type}</h4>
+    <div class="gyCont">
+      <dl>
+        <dt class="fl"> <img src="/skins/default/img/Index/gyImg.jpg" width="250" height="184" /></dt>
+        <dd><p> {dede:global.cfg_wz/}</p>
+          {dede:type typeid='4'} <a href="[field:typelink/]">MORE+</a>{/dede:type}
+          </p>
+        </dd>
+      </dl>
+      <ul id="compic_scroll">
+        {dede:arclist typeid='33'}
+        <li><a href="[field:arcurl/]" title="[field:title/]"> <img alt="[field:title/]" src="[field:litpic/]" width="142" height="95" /></a>
+          <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:title/]</a></h5>
+        </li>
+        {/dede:arclist}
+      </ul>
+      <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "compic_scroll"; // 内容容器ID""
+    //scrollPic_04.arrLeftId = "compic_left"; //左箭头ID
+    //scrollPic_04.arrRightId = "compic_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 664; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script> 
+    </div>
+  </div>
+  <!-- cb_研发团队 -->
+  
+  <div class="yftd fr">
+    <h4 class="contTit"> {dede:type typeid='37'}<a class="titA" href="[field:typelink/]">[field:typename/]</a>{/dede:type}</h4>
+    <div class="yftdCont">
+      <dl>
+        <dt>{dede:type typeid='37'}<a href="[field:typelink/]"> <img src="/img/team.jpg" width="304" height="214" /></a>{/dede:type}</dt>
+        <dd> 公司研发团队具有一流的制作工艺、高度合作的研发、设计、生产团队，勇于开拓，敢于创新，努力使我们的产品达到集印刷品、包装、观赏于一体，具馈赠、摆设、展示等价值。为此，我们将竭尽全力使产品更精美，工艺更完善，品种更齐全！</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+<!-- cb_广告栏 -->
+<div class="ggl container"> <img src="/skins/default/img/Index/gglImg_01.jpg" width="1000" height="138" /><b>13509628858</b> </div>
+<div class="twSpan container"> 
+  <!--动态-->
+  
+  <div class="dtBox fl">
+    <h4> <a class=" cur" href="gongsidongtai.htm"
+                    id="chknew1" onmouseover="setTabNews('chknew',1,3);">公司动态 </a> <a class="" href="hangyedongtai.htm"
+                    id="chknew2" onmouseover="setTabNews('chknew',2,3);">行业动态 </a> <a class="" href="jishudongtai.htm"
+                    id="chknew3" onmouseover="setTabNews('chknew',3,3);">技术动态 </a> </h4>
+    <div class="dtCont">
+      <div id="con_chknew1" > {dede:arclist typeid='2' row='1' type='.image'}
+        <dl>
+          <dt class="fl"><a href="[field:arcurl/]" title="[field:fulltitle/]"> <img alt="[field:title/]" src="[field:litpic/]" width="206" height="160" /></a> </dt>
+          <dd>
+            <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:fulltitle/]</a></h5>
+            <p> [field:description/]</p>
+          </dd>
+        </dl>
+        {/dede:arclist}
+        <ul>
+          {dede:arclist typeid='2' row='5'}
+          <li><a target="_blank" href="[field:arcurl/]" title="[field:title/]"> [field:fulltitle/]</a><span>【[field:pubdate function="MyDate('Y-m-d',@me)"/]】</span> </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div id="con_chknew2" style='display: none;'> {dede:arclist typeid='13' row='1' type='.image'}
+        <dl>
+          <dt class="fl"><a href="[field:arcurl/]" title="[field:fulltitle/]"> <img alt="[field:title/]" src="[field:litpic/]" width="206" height="160" /></a> </dt>
+          <dd>
+            <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:fulltitle/]</a></h5>
+            <p> [field:description/]</p>
+          </dd>
+        </dl>
+        {/dede:arclist}
+        <ul>
+          {dede:arclist typeid='13' row='5'}
+          <li><a target="_blank" href="[field:arcurl/]" title="[field:title/]"> [field:fulltitle/]</a><span>【[field:pubdate function="MyDate('Y-m-d',@me)"/]】</span> </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div id="con_chknew3" style='display: none;'> {dede:arclist typeid='15' row='1' type='.image'}
+        <dl>
+          <dt class="fl"><a href="[field:arcurl/]" title="[field:fulltitle/]"> <img alt="[field:title/]" src="[field:litpic/]" width="206" height="160" /></a> </dt>
+          <dd>
+            <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:fulltitle/]</a></h5>
+            <p> [field:description/]</p>
+          </dd>
+        </dl>
+        {/dede:arclist}
+        <ul>
+          {dede:arclist typeid='15' row='5'}
+          <li><a target="_blank" href="[field:arcurl/]" title="[field:title/]"> [field:fulltitle/]</a><span>【[field:pubdate function="MyDate('Y-m-d',@me)"/]】</span> </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function setTabNews(name, cursel, n) {
+        for (i = 1; i <= n; i++) {
+            var menu = document.getElementById(name + i);
+            var con = document.getElementById("con_" + name + i);
+            if (i == cursel) {
+                menu.className = "cur";
+                con.style.display = "block";
+            } else {
+                menu.className = "";
+                con.style.display = "none";
+            }
+        }
+    }
+</script> 
+  <!-- cb_常见问题 -->
+  
+  <div class="wtjd fr">
+    <h4 class="contTit"> {dede:type typeid='14'} <a class="titA" href="[field:typelink/]"> [field:typename/]</a>{/dede:type}</h4>
+    <div class="wtjdCont" >
+      <div class="wdCont" id="faqmarquee"> {dede:arclist typeid='14'}
+        <dl>
+          <dt><a href="[field:arcurl/]" title="[field:fulltitle/]"> [field:fulltitle/] </a></dt>
+          <dd> [field:description/] </dd>
+        </dl>
+        {/dede:arclist} </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    new Marquee("faqmarquee", 0, 1, 318, 330, 20, 0, 1000, 22);
+</script>
+  <div class="clear"> </div>
+</div>
+<!-- cb_永顺通风采展示 -->
+<div class="alSpan">
+  <div class="gsfc container">
+    <h4> {dede:type typeid='7'}<a href="[field:typelink/]">风采展示</a>{/dede:type}
+      <div> Company thear</div>
+    </h4>
+    <div class="fcCont"> <a class="btnLeft" href="javascript:;" id="huanjing_left"></a>
+      <ul id="huanjing_scroll">
+        {dede:arclist typeid='7'}
+        <li><a href="[field:arcurl/]" title="[field:title/]"> <img alt="[filed:title/]" src="[field:litpic/]" width="210" height="216" /></a>
+          <h5> <a href="[field:arcurl/]" title="[field:title/]"> [field:title/]</a></h5>
+        </li>
+        {/dede:arclist}
+      </ul>
+      <a class="btnRight" href="javascript:;" id="huanjing_right"></a> </div>
+  </div>
+  <script language="javascript" type="text/javascript">
+
+    var scrollPic_04 = new ScrollPic();
+    scrollPic_04.scrollContId = "huanjing_scroll"; // 内容容器ID""
+    scrollPic_04.arrLeftId = "huanjing_left"; //左箭头ID
+    scrollPic_04.arrRightId = "huanjing_right"; //右箭头ID
+
+    scrollPic_04.frameWidth = 928; //显示框宽度
+
+    scrollPic_04.pageWidth = 1; //翻页宽度
+
+    scrollPic_04.speed = 5; //移动速度(单位毫秒，越小越快)
+    scrollPic_04.space = 8; //每次移动像素(单位px，越大越快)
+    scrollPic_04.autoPlay = true; //自动播放
+    scrollPic_04.autoPlayTime = 0.03; //自动播放间隔时间(秒)
+    scrollPic_04.initialize(); //初始化							
+		
+</script> 
+</div>
+<div class="yqljBg">
+  <div class="yqlj container">
+    <h4> <a href=#> 友情链</a>接<span>links</span></h4>
+    <p> {dede:flink row='24' type='text' titlelen="24"} [field:link /]{/dede:flink} </p>
+  </div>
+</div>
+{dede:include filename='footer.htm'/} 
+<script type="text/javascript" src="/js/rollup.min.js"></script> 
+
+<!-- Baidu Button BEGIN --> 
+
+<!-- Baidu Button END -->
+
+</body>
+<script src="js/lazyload.me.js" type="text/javascript"></script>
+</html>

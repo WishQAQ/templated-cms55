@@ -1,0 +1,1 @@
+<a href="[field:typelink/]">同类文章排行</a>

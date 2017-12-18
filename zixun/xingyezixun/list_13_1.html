@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新闻中心  /  行业动态_我的网站</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<script language="javascript">
+    var MARK="news";
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">SKIN_PATH="/skins/default/";</script><script type="text/javascript" src="/js/jquery.js"></script><script type="text/javascript" src="/js/Common.js"></script><script type="text/javascript" src="/js/Inc.js"></script><script type="text/javascript" src="/js/Ajax.js"></script>
+<link href="/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/Style.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/Common.css" rel="stylesheet" type="text/css" />
+<link href="/skins/default/temp.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--Header:Start--> 
+
+<link href="/skins/default/zzsc.css" rel="stylesheet" type="text/css"/>
+<script>
+$(function() {
+	// 悬浮窗口
+	$(".yb_conct").hover(function() {
+		$(".yb_conct").css("right", "5px");
+		$(".yb_bar .yb_ercode").css('height', '200px');
+	}, function() {
+		$(".yb_conct").css("right", "-127px");
+		$(".yb_bar .yb_ercode").css('height', '53px');
+	});
+	// 返回顶部
+	$(".yb_top").click(function() {
+		$("html,body").animate({
+			'scrollTop': '0px'
+		}, 300)
+	});
+});
+</script>
+
+<div class="yb_conct">
+  <div class="yb_bar">
+    <ul>
+      <li class="yb_top">返回顶部</li>
+      <li class="yb_phone">4008-888-888</li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线咨询</a> </li>
+      <li class="yb_QQ"> <a target="_blank" href="tencent://message/?uin=123456" title="即刻发送您的需求">在线下单</a> </li>
+      <li class="yb_ercode" style="height:53px;">微信二维码 <br>
+        <img class="hd_qr" src="/skins/default/img/weixin.jpg" width="125" alt="关注我们"> </li>
+    </ul>
+  </div>
+</div>
+<meta http-equiv="mobile-agent" content="format=xhtml;url=/wap/view.php?aid=13">
+<script type="text/javascript">// JavaScript Document
+function urlredirect() {
+	var sUserAgent = navigator.userAgent.toLowerCase();	
+	if ((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+		// 只适用织梦建站，PC跳转移动端
+		var thisUrl = window.location.href;
+		window.location.href = thisUrl.substr(0,thisUrl.lastIndexOf('/')+1)+'wap/';
+		
+	}
+}
+urlredirect();</script>
+<div class="header"> 
+  <!-- cb_顶部链接导航 -->
+  <div class="hd_top tr">
+    <div class="container"> <em class="fl">这里显示网站顶部公告</em> <span class="fr"><a href="javascript:addBookmark();">收藏本站</a>|<a href="/about/"> 公司简介</a>| <a href="/photo/"> 公司环境</a> </span> </div>
+  </div>
+  <!-- cb_页眉内容 -->
+  <div class="hd_cont container"> 
+    <!-- cb_LOGO -->
+    <dl class="hd_logo">
+      <dt class="fl"><a href="/"> <img src="/skins/default/img/common/logo.png" alt="我的网站" width="169" height="57" /></a></dt>
+      <dd class="fl">
+        <h2> 某某科技有限公司</h2>
+        <p> 专注高档手工礼品盒外贸OEM8年</p>
+      </dd>
+    </dl>
+    <dl class="dh_phone fr">
+      <dt>全国统一热线</dt>
+      <dd> 4008-888-888 </dd>
+    </dl>
+  </div>
+  <!-- cb_导航栏 -->
+  <div class="dh_nav">
+    <ul class="container">
+      <li class='navHome'><a href="/" title="首页" dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>首页</a></li>
+     
+     <li><a href="/about/">公司简介</a></li>
+     <li><a href='/zixun/' class='cur'>新闻中心</a></li>
+     <li><a href="/products/">产品中心</a></li>
+     
+     <li><a href="/fengcai/">企业风采</a></li>
+     
+     <li><a href="/company/">走进我们</a></li>
+     
+     <li><a href="/contact/">联系我们</a></li>
+     
+    </ul>
+    
+  </div>
+</div>
+ 
+<script type="text/javascript">
+    //heaernavcs();
+    initCommonHeader();
+    if (MARK == "") var MARK = "index";
+    initCommonHeaderKeywords(MARK);
+    $(function () {
+        var cururl = location.href;
+        var i = 0;
+        var count = $(".dh_nav ul li a").length;
+        $(".dh_nav ul li a").each(function (index) {
+            var url = $(this).attr("href");
+            if (url.length > 5 && cururl.substring(cururl.length - url.length).toUpperCase() == url.toUpperCase()) {
+                $(this).addClass("cur");
+                return;
+            }
+            i++;
+        });
+        if (i == count) {
+            $(".dh_nav ul li a:eq(0)").addClass("cur");
+        }
+    });
+</script> 
+
+<!--Header:End--> 
+<!--Content:Start-->
+<div class="topadcs" style="background: url('/img/xw.jpg') no-repeat scroll center;
+        height:400px"> </div>
+<div class="content">
+  <div class="left">
+    <div class="prs">
+      <h4 class="t05"> <a href="/zixun/"> 新闻中心</a></h4>
+      <div class="t05_con">
+        <ul class='t05_uls'>
+          
+          <li><a href='/news/'>公司动态</a> </li>
+          
+          <li><a href='/zixun/xingyezixun/'>行业动态</a> </li>
+          
+          <li><a href='/zixun/changjianwenti/'>常见问题</a> </li>
+          
+          <li><a href='/zixun/jishu/'>技术动态</a> </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h4 class="t05 mt10">推荐产品</h4>
+      <div class="t05_con"> <dl class="t05_con_dl">
+          <dt><a href="/products/other/shoutidai/37.html" target="_blank" title="各类手提袋"><img src="/uploads/allimg/150514/1-1505142119120-L.jpg" alt="各类手提袋" /></a></dt>
+          <dd><a href="/products/other/shoutidai/37.html" target="_blank" title="各类手提袋">各类手提袋</a></dd>
+        </dl>
+<dl class="t05_con_dl">
+          <dt><a href="/products/zlj/csdt/10.html" target="_blank" title="巧克力礼品展示盒"><img src="/uploads/allimg/150114/1-1501141503470-L.jpg" alt="巧克力礼品展示盒" /></a></dt>
+          <dd><a href="/products/zlj/csdt/10.html" target="_blank" title="巧克力礼品展示盒">巧克力礼品展示盒</a></dd>
+        </dl>
+<dl class="t05_con_dl">
+          <dt><a href="/products/caihe/dai/24.html" target="_blank" title="礼品包装盒设计（展开图）图片[矢量图 AI]"><img src="/uploads/allimg/150118/1-15011Q40G50-L.jpg" alt="礼品包装盒设计（展开图）图片[矢量图 AI]" /></a></dt>
+          <dd><a href="/products/caihe/dai/24.html" target="_blank" title="礼品包装盒设计（展开图）图片[矢量图 AI]">礼品包装盒设计（展开图）图片[矢量图 AI]</a></dd>
+        </dl>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="contactn mt10 mb10 mb10">
+  <div class="t05">
+    <h4> <a class="yan2" href="/contact/">联系我们</a></h4>
+  </div>
+  <div class="subnr"> <img src="/skins/default/img/CatactUs.jpg">
+    <p> <span style="font-size: 12px;">咨询热线：</span></p>
+    <p style="font-size: 20px; color: #d5111e;"> 4008-888-888</p>
+    <p> <span>邮箱：</span> 123456@qq.com </p>
+    <span>地址：</span> 江苏省南京市玄武区玄武湖
+    </p>
+  </div>
+</div>
+ 
+    <script type="text/javascript">
+        newsSelectCurrentPosition('0001,0002,0003');
+    </script> 
+  </div>
+  <div class="right">
+    <div class="plc"> <span><a href='http://localhost:9090/'>主页</a> > <a href='/zixun/'>新闻中心</a> > <a href='/zixun/xingyezixun/'>行业动态</a> > </span> </div>
+    <div class="righttop"> </div>
+    <div class="right_main">
+      <div class="news_con"> <dl class="news_dl">
+          <dt><a href="/zixun/xingyezixun/20.html" target="_blank" title="彩箱印刷定制生产流程"
+                                    class="dt_1">[行业动态]
+            彩箱印刷定制生产流程</a><span class="dt_2">[
+            2015-01-15
+            ]</span></dt>
+          <dd> 彩盒制作主要流程： 1.制作文档：任何彩盒生产印刷之前都要制作文档，对文档进行设计，设计好彩盒印刷文件，并同时完成彩盒材料的选定。 2.出版印刷：设计好彩盒印刷文档之后，</dd>
+        </dl><dl class="news_dl">
+          <dt><a href="/zixun/xingyezixun/19.html" target="_blank" title="我国包装行业应大力发展绿色包装 实现可持续发"
+                                    class="dt_1">[行业动态]
+            我国包装行业应大力发展绿色包装 实现可持续发</a><span class="dt_2">[
+            2015-01-15
+            ]</span></dt>
+          <dd> 目前，塑料包装已在包装行业中占据比例越来越大，而留下来的包装废弃物也在逐年增长，使得环境保护受到了很大威胁，而绿色环保包装也变得越来越重要，因此，应大力发展绿色包</dd>
+        </dl><dl class="news_dl">
+          <dt><a href="/zixun/xingyezixun/18.html" target="_blank" title="印刷人眼中出版业的“隐性成本”"
+                                    class="dt_1">[行业动态]
+            印刷人眼中出版业的“隐性成本”</a><span class="dt_2">[
+            2015-01-15
+            ]</span></dt>
+          <dd> 印刷人眼中出版业的隐性成本 作为印刷厂，我们英利印刷建议出版社，不要只看到冰山以上的成本，即不能只关心印刷成本，应更多地关心隐性成本，要做到心里有数，印刷一本书到底</dd>
+        </dl><dl class="news_dl">
+          <dt><a href="/zixun/xingyezixun/17.html" target="_blank" title="按需印刷中应注意的事情"
+                                    class="dt_1">[行业动态]
+            按需印刷中应注意的事情</a><span class="dt_2">[
+            2015-01-15
+            ]</span></dt>
+          <dd> 近日，拥抱数字时代，共擎出版未来高峰论坛在深圳举行。论坛现场，出版产业链上出版社、数字设备印刷制造商、印刷企业代表200多人共话我国按需印刷发展趋势。从几年前的探讨，</dd>
+        </dl>
+        <div class="clear"> </div>
+        <!--OranPager:start
+Developed By Oran Day(oransite#gmail.com)
+Version:1.1.0.9
+Aug. 28, 2009
+All rights reserved.-->
+        <div class='pagingNav'><li><span class="pageinfo">共 <strong>1</strong>页<strong>4</strong>条记录</span></li>
+</div>
+        <!--OranPager:end--> 
+        
+      </div>
+    </div>
+    <div class="rightbot"> </div>
+  </div>
+  <div class="clear"> </div>
+</div>
+<!--Content:End--> 
+<!--Footer:Start--> 
+
+<div class="fotNavBg">
+  <div class="fotNav container"> 
+  <a href="/">首页</a>
+  
+  | <a href="/about/">公司简介</a>
+  
+  | <a href="/zixun/">新闻中心</a>
+  
+  | <a href="/products/">产品中心</a>
+  
+  | <a href="/fengcai/">企业风采</a>
+  
+  | <a href="/company/">走进我们</a>
+  
+  | <a href="/contact/">联系我们</a>
+  
+  </div>
+</div>
+<div class="footWrap">
+  <div class="footer">
+   
+      <p>某某科技有限公司　4008-888-888</p>
+      <p>江苏省南京市玄武区玄武湖　123456@qq.com</p>
+      <p> Copyright © 2002-2016 织梦科技 版权所有  <a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>　<a href="http://www.miitbeian.gov.cn/">苏ICP12345678</a></p>
+   
+  </div>
+</div>
+ 
+<script type="text/javascript" src="/js/rollup.min.js"></script> 
+
+<!-- Baidu Button BEGIN --> 
+
+<!-- Baidu Button END --> 
+
+<!--Footer:End-->
+</body>
+</html>
+<script type="text/javascript">
+    $(".news_con").find("dl").hover(function () { $(this).addClass("news_dl_hover"); }, function () { $(this).removeClass("news_dl_hover"); })
+</script>

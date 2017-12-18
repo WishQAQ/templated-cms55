@@ -1,0 +1,1 @@
+<a href="[field:typelink/]">风采展示</a>

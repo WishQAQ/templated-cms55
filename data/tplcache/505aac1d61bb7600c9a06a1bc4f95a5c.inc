@@ -1,0 +1,1 @@
+<a href="[field:typelink/]">设备实力展示</a>

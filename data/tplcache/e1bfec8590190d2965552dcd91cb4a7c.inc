@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"> 新闻中心</a>

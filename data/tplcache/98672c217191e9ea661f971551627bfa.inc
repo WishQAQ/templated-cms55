@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"> <img src="/img/team.jpg" width="304" height="214" /></a>
